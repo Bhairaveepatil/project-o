@@ -1,0 +1,101 @@
+.about{
+    padding: 5rem 3rem 3rem 3rem;
+    background: rgb(240, 225, 178);
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.row .column{
+    width: 40%;
+}
+.column .tabs{
+    display: flex;
+}
+.single-tab{
+    background: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.single-tab h2{
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 600;
+}
+.about-img{
+ position: relative;
+ background-image: url("../Images/ibolat-O2oudkDjvkQ-unsplash.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+ height: 527px;
+ width: 100%;
+}
+.content{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: none;
+}
+.active-content{
+    display: block;
+}
+.active-tab{
+    background-color: grey;
+    position: relative;
+}
+.active-tab h2 {
+    color: white;
+}
+.active-tab::before{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: grey transparent transparent transparent;
+}
+.content h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+.content p{
+    padding-bottom: 1rem;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: rgb(17, 16, 16);
+}
+.single-content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width:768px) {
+    .about{
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .about-img{
+        height: 500px;
+    }
+    .row .column{
+        width: 100%;
+    }
+    .tabs{
+        padding-top: 3rem;
+    }
+}

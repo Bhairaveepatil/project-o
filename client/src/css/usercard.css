@@ -1,0 +1,30 @@
+/* .card{
+    margin :2rem 2rem 2rem 2rem;
+    padding: 1.5rem;
+    width:250px;
+    box-shadow: 0 0 28px 4px rgba(0, 0, 0, 0);
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1) ;
+}
+.card_title{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.card_img{
+    display: flex;
+    justify-content: flex-end;
+}
+.card_img img{
+    border-radius: 50%;
+
+} */
+.container{
+    overflow: auto;
+}
+.details_container{
+    margin: auto;
+}
