@@ -12,13 +12,13 @@ const About = () => {
   return (
     <>
     
-        <section className='about' >
-            <div className='row' >
-                 <div className='column'>
-                    <div className='about-img' ></div>
+        <section className="about" >
+            <div className="row" >
+                 <div className="column">
+                    <div className="about-img" ></div>
                  </div>
-                 <div className='column'>
-                    <div className='tabs'>
+                 <div className="column">
+                    <div className="tabs">
                         <div className={toggle === 1 ? "single-tab active-tab" : "single-tab"}
                         onClick={()=> toggleState(1)}
                         >
@@ -36,7 +36,7 @@ const About = () => {
                         </div>
 
                     </div>
-                    <div className='tab-content'>
+                    <div className="tab-content">
                           {/* About Content */}
                           <div className={toggle === 1 ? "content active-content" : "content"}>
                             {/* <h2>About Us</h2> */}
